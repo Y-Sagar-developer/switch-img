@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #footer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <script>
+      // Create the div element
+      let div = document.createElement("div");
+      div.style.border = "2px solid";
+      div.style.height = "350px";
+      div.style.width = "450px";
+      div.style.display = "flex";
+      div.style.justifyContent = "center";
+      div.style.alignItems = "center";
+      document.body.append(div);
+      div.style.marginLeft = "auto";
+      div.style.marginRight = "auto";
+
+      // Create the first image
+      const image1 = document.createElement("img");
+      image1.setAttribute("src", "./prabhas.jpg");
+
+      function prabhas() {
+        div.innerHTML = ""; // Clear the div content
+        image1.style.height = "200px";
+        div.append(image1); // Append the first image
+        div.style.backgroundColor = "red";
+      }
+
+      // Create the second image
+      const image2 = document.createElement("img");
+      image2.setAttribute("src", "./allu.jpg");
+
+      function allu() {
+        div.innerHTML = ""; // Clear the div content
+        image2.style.height = "200px";
+        div.append(image2); // Append the second image
+        div.style.backgroundColor = "black";
+      }
+
+      //create the third image
+      const image3 = document.createElement("img");
+      image3.setAttribute("src", "./Ram.jpg");
+
+      function ram(params) {
+        div.innerHTML = "";
+        image3.style.height = "200px";
+        div.append(image3);
+        div.style.backgroundColor = "orange";
+      }
+      //create the fourth image
+      const image4 = document.createElement("img");
+      image4.setAttribute("src", "./ntr.webp");
+
+      function ntr(params) {
+        div.innerHTML = "";
+        image4.style.height = "200px";
+        div.append(image4);
+        div.style.backgroundColor = "blue";
+      }
+
+      //create the fifth image
+
+      const image5 = document.createElement("img");
+      image5.setAttribute("src", "./Pawan.webp");
+
+      function pawan(params) {
+        div.innerHTML = "";
+        image5.style.height = "200px";
+        div.append(image5);
+        div.style.backgroundColor = "brown";
+      }
+    </script>
+
+    <!-- Buttons to trigger the functions -->
+    <div id="footer">
+      <button id="btn1" onclick="prabhas()">PRABHAS</button>
+      <button id="btn2" onclick="allu()">ALLU ARJUN</button>
+      <button id="btn3" onclick="ram()">RAM CHARAN</button>
+      <button id="btn4" onclick="ntr()">N.T.R</button>
+      <button id="btn5" onclick="pawan()">PAWAN KALYAN</button>
+    </div>
+  </body>
+</html>
