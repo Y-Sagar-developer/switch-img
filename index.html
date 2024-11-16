@@ -15,6 +15,8 @@
   </style>
   <body>
     <script>
+              let h1=document.createElement("h1");
+
       // Create the div element
       let div = document.createElement("div");
       div.style.border = "2px solid";
@@ -26,6 +28,7 @@
       document.body.append(div);
       div.style.marginLeft = "auto";
       div.style.marginRight = "auto";
+        div.style.flexDirection="column"
 
       // Create the first image
       const image1 = document.createElement("img");
@@ -36,6 +39,8 @@
         image1.style.height = "200px";
         div.append(image1); // Append the first image
         div.style.backgroundColor = "red";
+        h1.innerHTML="PRABHAS";
+        div.append(h1);
       }
 
       // Create the second image
@@ -47,6 +52,10 @@
         image2.style.height = "200px";
         div.append(image2); // Append the second image
         div.style.backgroundColor = "black";
+        div.append(h1)
+        h1.innerHTML="ALLU ARJUN"
+        h1.style.color="white"
+        
       }
 
       //create the third image
@@ -58,6 +67,8 @@
         image3.style.height = "200px";
         div.append(image3);
         div.style.backgroundColor = "orange";
+        div.append(h1)
+        h1.innerHTML="RAM CHARAN"
       }
       //create the fourth image
       const image4 = document.createElement("img");
@@ -68,6 +79,8 @@
         image4.style.height = "200px";
         div.append(image4);
         div.style.backgroundColor = "blue";
+          div.append(h1)
+        h1.innerHTML="N.T.R"
       }
 
       //create the fifth image
@@ -80,6 +93,8 @@
         image5.style.height = "200px";
         div.append(image5);
         div.style.backgroundColor = "brown";
+            div.append(h1)
+        h1.innerHTML="PAWAN KALYAN"
       }
     </script>
 
